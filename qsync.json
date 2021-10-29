@@ -19,10 +19,6 @@
         "github": "https://github.com/jgraph/drawio-desktop"
     },
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://download.qnap.com/Storage/Utility/QNAPQsyncClientWindows-$version.exe#/dl.7z"
-            }
-        }
+        "url": "https://download.qnap.com/Storage/Utility/QNAPQsyncClientWindows-$version.exe#/dl.7z"
     }
 }
