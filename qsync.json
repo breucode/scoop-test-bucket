@@ -1,0 +1,31 @@
+{
+    "version": "5.0.2.0927",
+    "description": "Qsync",
+    "homepage": "https://www.qnap.com/en-us/utilities/essentials",
+    "architecture": {
+        "64bit": {
+            "url": "https://download.qnap.com/Storage/Utility/QNAPQsyncClientWindows-5.0.2.0927.exe#/dl.7z",
+            "hash": "",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
+            ]
+        }
+    },
+    "bin": "Qsync.exe",
+    "shortcuts": [
+        [
+            "Qsync"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/jgraph/drawio-desktop"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.qnap.com/Storage/Utility/QNAPQsyncClientWindows-$version.exe#/dl.7z"
+            }
+        }
+    }
+}
