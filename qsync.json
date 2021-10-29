@@ -11,7 +11,8 @@
     "bin": "Qsync.exe",
     "shortcuts": [
         [
-            "Qsync"
+            "Qsync",
+            "Qsync.exe"
         ]
     ],
     "checkver": {
